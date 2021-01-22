@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\bds.h" />
+    <ClInclude Include="..\..\src\bms.h" />
+    <ClInclude Include="..\..\src\cnames.h" />
+    <ClInclude Include="..\..\src\gds.h" />
+    <ClInclude Include="..\..\src\grib.h" />
+    <ClInclude Include="..\..\src\pds4.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\BDSunpk.c" />
+    <ClCompile Include="..\..\src\BDS_NValues.c" />
+    <ClCompile Include="..\..\src\cnames.c" />
+    <ClCompile Include="..\..\src\cptectable_254.c" />
+    <ClCompile Include="..\..\src\dwdtable_002.c" />
+    <ClCompile Include="..\..\src\dwdtable_201.c" />
+    <ClCompile Include="..\..\src\dwdtable_202.c" />
+    <ClCompile Include="..\..\src\dwdtable_203.c" />
+    <ClCompile Include="..\..\src\dwdtable_204.c" />
+    <ClCompile Include="..\..\src\dwdtable_205.c" />
+    <ClCompile Include="..\..\src\ectable_128.c" />
+    <ClCompile Include="..\..\src\ectable_129.c" />
+    <ClCompile Include="..\..\src\ectable_130.c" />
+    <ClCompile Include="..\..\src\ectable_131.c" />
+    <ClCompile Include="..\..\src\ectable_132.c" />
+    <ClCompile Include="..\..\src\ectable_133.c" />
+    <ClCompile Include="..\..\src\ectable_140.c" />
+    <ClCompile Include="..\..\src\ectable_150.c" />
+    <ClCompile Include="..\..\src\ectable_151.c" />
+    <ClCompile Include="..\..\src\ectable_160.c" />
+    <ClCompile Include="..\..\src\ectable_162.c" />
+    <ClCompile Include="..\..\src\ectable_170.c" />
+    <ClCompile Include="..\..\src\ectable_171.c" />
+    <ClCompile Include="..\..\src\ectable_172.c" />
+    <ClCompile Include="..\..\src\ectable_173.c" />
+    <ClCompile Include="..\..\src\ectable_174.c" />
+    <ClCompile Include="..\..\src\ectable_180.c" />
+    <ClCompile Include="..\..\src\ectable_190.c" />
+    <ClCompile Include="..\..\src\ectable_200.c" />
+    <ClCompile Include="..\..\src\ectable_210.c" />
+    <ClCompile Include="..\..\src\ectable_211.c" />
+    <ClCompile Include="..\..\src\ectable_228.c" />
+    <ClCompile Include="..\..\src\ec_ext.c" />
+    <ClCompile Include="..\..\src\ensemble.c" />
+    <ClCompile Include="..\..\src\flt2ieee.c" />
+    <ClCompile Include="..\..\src\gds_grid.c" />
+    <ClCompile Include="..\..\src\gribtable.c" />
+    <ClCompile Include="..\..\src\ibm2flt.c" />
+    <ClCompile Include="..\..\src\intpower.c" />
+    <ClCompile Include="..\..\src\levels.c" />
+    <ClCompile Include="..\..\src\mdl_nceptab.c" />
+    <ClCompile Include="..\..\src\missing.c" />
+    <ClCompile Include="..\..\src\nceptable_opn.c" />
+    <ClCompile Include="..\..\src\nceptable_reanal.c" />
+    <ClCompile Include="..\..\src\nceptab_128.c" />
+    <ClCompile Include="..\..\src\nceptab_129.c" />
+    <ClCompile Include="..\..\src\nceptab_130.c" />
+    <ClCompile Include="..\..\src\nceptab_131.c" />
+    <ClCompile Include="..\..\src\nceptab_133.c" />
+    <ClCompile Include="..\..\src\nceptab_140.c" />
+    <ClCompile Include="..\..\src\nceptab_141.c" />
+    <ClCompile Include="..\..\src\PDStimes.c" />
+    <ClCompile Include="..\..\src\PDS_date.c" />
+    <ClCompile Include="..\..\src\readgrib.c" />
+    <ClCompile Include="..\..\src\seekgrib.c" />
+    <ClCompile Include="..\..\src\wgrib_main.c" />
+    <ClCompile Include="..\..\src\wrtieee.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{779FADEE-605A-49C8-90CA-18A1DDAEF100}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>wgrib</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
