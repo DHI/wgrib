@@ -58,9 +58,8 @@ void EC_ext(unsigned char *pds, char *prefix, char *suffix, int verbose) {
             case 10: sprintf(string, "Control forecast %d",PDS_EcFcstNo(pds)); 
 		break;
             case 11: 
-		if (ec_stream == 1035) 
-              	   sprintf(string, "Perturbed forecast %d",
-                   PDS_EcFcstNo(pds)); 
+		if (ec_stream == 1035 || ec_stream == 1033 || ec_stream == 1081 || ec_stream == 1079)
+            sprintf(string, "Perturbed forecast %d", PDS_EcFcstNo(pds)); 
 		else
 		    strcpy(string, "Perturbed forecasts"); break;
 		break;
