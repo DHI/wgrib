@@ -12,3 +12,10 @@ jobs:
     - name: Build
       working-directory: ./src
       run: make
+   
+    - name: Upload executable as artifact
+      uses: actions/upload-artifact@v2.2.3
+      with:
+       name: wgrib
+       path: ./src/wgrib
+    
